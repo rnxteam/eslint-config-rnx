@@ -36,9 +36,9 @@ npm install eslint-config-pintec --save-dev
 
 指定使用 Pintec 编码规范。在项目根目录下创建 `.eslintrc` 文件。
 
-```bash
+```js
 {
-  # 使用 Pintec 编码规范
+  // 使用 Pintec 编码规范
   extends: 'eslint-config-pintec',
 }
 ```
@@ -83,6 +83,9 @@ indent_size = 2
 {
   extends: 'eslint-config-pintec',
   rules: {
+    // 允许引用未在 package.json 中写入依赖的包
+    'import/no-extraneous-dependencies': 0,
+    // 允许引用指定的而路径不存在的包
     'import/no-unresolved': [2, { ignore: ['NavigatorNavigationBar'] }],
   },
 }
