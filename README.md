@@ -79,7 +79,7 @@ indent_size = 2
 
 这时可以通过如下配置，添加例外情况：
 
-```
+```js
 {
   "extends": "eslint-config-pintec",
   "rules": {
