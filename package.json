@@ -6,7 +6,7 @@
       "name": "wangdagen",
       "url": "http://wangdagen.com/"
   },
-  "devDependencies": {
+  "dependencies": {
     "babel-eslint": "^6.1.2",
     "eslint": "^3.5.0",
     "eslint-config-airbnb": "^11.1.0",
