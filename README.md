@@ -39,7 +39,7 @@ npm install eslint-config-pintec --save-dev
 ```bash
 {
   # 使用 Pintec 编码规范
-  "extends": "eslint-config-pintec",
+  extends: 'eslint-config-pintec',
 }
 ```
 
@@ -81,10 +81,9 @@ indent_size = 2
 
 ```js
 {
-  "extends": "eslint-config-pintec",
-  "rules": {
-    # 允许引用指定的而路径不存在的包，PROVIDES_MODULE_NAME 为指定包名
-    "import/no-unresolved": [2, { ignore: ['PROVIDES_MODULE_NAME'] }],
+  extends: 'eslint-config-pintec',
+  rules: {
+    'import/no-unresolved': [2, { ignore: ['NavigatorNavigationBar'] }],
   },
 }
 ```
