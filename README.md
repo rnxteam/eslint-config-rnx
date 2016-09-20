@@ -1,5 +1,8 @@
 # eslint-config-pintec
 
+[![npm](https://img.shields.io/npm/v/npm.svg?maxAge=2592000)]()
+[![npm](https://img.shields.io/npm/dt/express.svg?maxAge=2592000)]()
+
 Pintec's ESLint config, for a better code style.
 
 ## 编码规范
@@ -8,31 +11,21 @@ Pintec's ESLint config, for a better code style.
 2. 支持 ES7；
 3. 允许在 JS 文件中使用 JSX；
 4. 允许类的非静态方法不使用 `this`；
+5. 关闭引用路径检查。
 
 ## 开始
 
 ### 1. 安装 eslint
 
-#### 1.1 安装 Atom 插件
+#### 1.1 安装 npm 依赖
 
-使 Atom 支持 eslint 规范检查。
-
-```bash
-# 安装 linter 插件
-apm install linter
-# 安装 linter-eslint 插件
-apm install linter-eslint
-```
-
-#### 1.2 安装 npm 依赖
-
-在项目根目录下执行。
+在项目根目录下执行：
 
 ```bash
 npm install eslint-config-pintec --save-dev
 ```
 
-#### 1.3 创建 `.eslintrc` 文件
+#### 1.2 创建 `.eslintrc` 文件
 
 指定使用 Pintec 编码规范。在项目根目录下创建 `.eslintrc` 文件。
 
@@ -43,11 +36,22 @@ npm install eslint-config-pintec --save-dev
 }
 ```
 
-### 2. 安装 editorconfig（可选）
+### 2. 安装 Atom 插件（可选）
+
+使 Atom 支持 eslint 规范检查。
+
+```bash
+# 安装 linter 插件
+apm install linter
+# 安装 linter-eslint 插件
+apm install linter-eslint
+```
+
+### 3. 安装 editorconfig（可选）
 
 主要为使 tab 键符合编码规范的同时不至于影响 Atom 中的其他项目。
 
-#### 2.1 安装 Atom 插件
+#### 3.1 安装 Atom 插件
 
 使 Atom 支持 editorconfig。
 
@@ -55,7 +59,7 @@ npm install eslint-config-pintec --save-dev
 apm install editorconfig
 ```
 
-#### 2.2 创建 `.editorconfig` 文件
+#### 3.2 创建 `.editorconfig` 文件
 
 配置缩进（使用双空格缩进）。在项目根目录下创建 `.editorconfig` 文件。
 
@@ -67,26 +71,18 @@ indent_style = space
 indent_size = 2
 ```
 
+### 4. 运行
+
+在项目根目录下执行：
+
+```bash
+./node_modules/.bin/eslint <filename/directory>
+```
+
+如果安装了 Atom 插件，那么自动运行，并在 Atom 下方显示实时状态。
+
 ## 提示
 
 1. `.editorconfig` 不是实时生效的，你需要重启 Atom 后才能生效；
 2. `.eslintrc` 也不是实时生效的，你需要在 Atom 中运行 `linter: lint` 命令或者重新打开待检测文件才能生效；
-3. 在 Atom 中运行 `Linter Eslint: Fix File` 命令可以让 Atom 自动完成简单的格式化操作；
-
-### 如何引用 `@providesModule` 声明的模块
-
-当前编码风格是不允许引用 `node_modules/` 下不存在的模块的。也就是，Facebook 通过 `@providesModule` 声明的模块，如果在项目中通过模块名去引用是不被允许的（写路径可以解决）。
-
-这时可以通过如下配置，添加例外情况：
-
-```js
-{
-  extends: 'eslint-config-pintec',
-  rules: {
-    // 允许引用未在 package.json 中写入依赖的包
-    'import/no-extraneous-dependencies': 0,
-    // 允许引用指定的而路径不存在的包
-    'import/no-unresolved': [2, { ignore: ['NavigatorNavigationBar'] }],
-  },
-}
-```
+3. 在 Atom 中运行 `Linter Eslint: Fix File` 命令可以让 Atom 自动完成简单的格式化操作。
