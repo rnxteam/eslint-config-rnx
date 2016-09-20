@@ -1,7 +1,7 @@
 # eslint-config-pintec
 
-[![npm](https://img.shields.io/npm/v/npm.svg?maxAge=2592000)]()
-[![npm](https://img.shields.io/npm/dt/express.svg?maxAge=2592000)]()
+[![npm](https://img.shields.io/npm/v/eslint-config-pintec.svg?maxAge=2592000)]()
+[![npm](https://img.shields.io/npm/dt/eslint-config-pintec.svg?maxAge=2592000)]()
 
 Pintec's ESLint config, for a better code style.
 
