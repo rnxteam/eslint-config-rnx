@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-pintec",
   "version": "0.0.1",
-  "description": "Pintec's ESLint config, for a better codestyle.",
+  "description": "Pintec's ESLint config, for a better code style.",
   "author": {
       "name": "wangdagen",
       "url": "http://wangdagen.com/"
