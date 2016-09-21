@@ -1,11 +1,17 @@
 {
   "name": "eslint-config-pintec",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Pintec's ESLint config, for a better code style.",
   "author": {
-      "name": "wangdagen",
-      "url": "http://wangdagen.com/"
+    "name": "wangdagen",
+    "url": "http://wangdagen.com/"
   },
+  "keywords": [
+    "style guide",
+    "eslint",
+    "config",
+    "pintec"
+  ],
   "dependencies": {
     "babel-eslint": "^6.1.2",
     "eslint": "^3.5.0",
