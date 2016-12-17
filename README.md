@@ -1,9 +1,9 @@
-# eslint-config-pintec
+# eslint-config-rnx
 
-[![npm](https://img.shields.io/npm/v/eslint-config-pintec.svg?maxAge=2592000)](https://www.npmjs.com/package/eslint-config-pintec)
-[![npm](https://img.shields.io/npm/dt/eslint-config-pintec.svg?maxAge=2592000)](https://www.npmjs.com/package/eslint-config-pintec)
+[![npm](https://img.shields.io/npm/v/eslint-config-rnx.svg?maxAge=2592000)](https://www.npmjs.com/package/eslint-config-rnx)
+[![npm](https://img.shields.io/npm/dt/eslint-config-rnx.svg?maxAge=2592000)](https://www.npmjs.com/package/eslint-config-rnx)
 
-Pintec's ESLint config, for a better code style.
+RNX's ESLint config, for a better code style.
 
 ## 编码规范
 
@@ -22,17 +22,17 @@ Pintec's ESLint config, for a better code style.
 在项目根目录下执行：
 
 ```bash
-npm install eslint-config-pintec --save-dev
+npm install eslint-config-rnx --save-dev
 ```
 
 #### 1.2 创建 `.eslintrc` 文件
 
-指定使用 Pintec 编码规范。在项目根目录下创建 `.eslintrc` 文件。
+指定使用 RNX 编码规范。在项目根目录下创建 `.eslintrc` 文件。
 
 ```js
 {
-  // 使用 Pintec 编码规范
-  extends: 'eslint-config-pintec',
+  // 使用 RNX 编码规范
+  extends: 'eslint-config-rnx',
 }
 ```
 

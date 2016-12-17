@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-pintec",
-  "version": "0.0.4",
-  "description": "Pintec's ESLint config, for a better code style.",
+  "name": "eslint-config-rnx",
+  "version": "1.0.0",
+  "description": "RNX's ESLint config, for a better code style.",
   "author": {
     "name": "wangdagen",
     "url": "http://wangdagen.com/"
@@ -10,8 +10,12 @@
     "style guide",
     "eslint",
     "config",
-    "pintec"
+    "rnx"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dragonwong/eslint-config-rnx"
+  },
   "dependencies": {
     "babel-eslint": "^6.1.2",
     "eslint": "^3.5.0",
