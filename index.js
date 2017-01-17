@@ -9,5 +9,6 @@ module.exports = {
     'class-methods-use-this': 0,
     'import/no-extraneous-dependencies': 0,
     'import/no-unresolved': 0,
+    'react/prefer-stateless-function': 0,
   },
 };
