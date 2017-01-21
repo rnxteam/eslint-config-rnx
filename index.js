@@ -10,5 +10,6 @@ module.exports = {
     'import/no-extraneous-dependencies': 0,
     'import/no-unresolved': 0,
     'react/prefer-stateless-function': 0,
+    'no-lonely-if': 0,
   },
 };

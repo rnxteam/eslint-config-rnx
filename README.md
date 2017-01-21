@@ -13,7 +13,8 @@ RNX's ESLint config, for a better code style.
 3. 允许在 JS 文件中使用 JSX；
 4. 允许类的非静态方法不使用 `this`；
 5. 关闭引用路径检查；
-6. 允许无状态的组件不被写成纯函数形式。
+6. 允许无状态的组件不被写成纯函数形式；
+7. 允许独立 `if`（[参考](http://eslint.org/docs/rules/no-lonely-if)）。
 
 ## 开始
 

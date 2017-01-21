@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rnx",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "RNX's ESLint config, for a better code style.",
   "author": {
     "name": "wangdagen",
