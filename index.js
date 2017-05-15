@@ -12,5 +12,6 @@ module.exports = {
     'react/prefer-stateless-function': 0,
     'no-lonely-if': 0,
     'no-param-reassign': 0,
+    'react/forbid-prop-types': ['error', { 'forbid': ['any'] }],
   },
 };
