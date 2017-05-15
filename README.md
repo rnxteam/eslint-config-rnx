@@ -15,7 +15,8 @@ RNX's ESLint config, for a better code style.
 5. 关闭引用路径检查；
 6. 允许无状态的组件不被写成纯函数形式；
 7. 允许独立 `if`（[参考](http://eslint.org/docs/rules/no-lonely-if)）；
-8. 允许修改函数参数（[参考](http://eslint.org/docs/rules/no-param-reassign)）。
+8. 允许修改函数参数（[参考](http://eslint.org/docs/rules/no-param-reassign)）；
+9. 允许组件属性类型声明使用 `PropTypes.object`。
 
 ## 开始
 

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rnx",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "RNX's ESLint config, for a better code style.",
   "author": {
     "name": "wangdagen",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dragonwong/eslint-config-rnx"
+    "url": "https://github.com/rnxteam/eslint-config-rnx"
   },
   "dependencies": {
     "babel-eslint": "^6.1.2",
