@@ -13,5 +13,6 @@ module.exports = {
     'no-lonely-if': 0,
     'no-param-reassign': 0,
     'react/forbid-prop-types': ['error', { 'forbid': ['any'] }],
+    'no-undef': ["error", { "typeof": true }],
   },
 };
