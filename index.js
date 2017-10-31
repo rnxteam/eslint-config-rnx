@@ -5,14 +5,18 @@ module.exports = {
   parser: 'babel-eslint',
   rules: {
     'react/require-extension': 0,
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-filename-extension': [1, {
+      extensions: ['.js', '.jsx']
+    }],
     'class-methods-use-this': 0,
     'import/no-extraneous-dependencies': 0,
     'import/no-unresolved': 0,
     'react/prefer-stateless-function': 0,
     'no-lonely-if': 0,
     'no-param-reassign': 0,
-    'react/forbid-prop-types': ['error', { 'forbid': ['any'] }],
-    'no-undef': ["error", { "typeof": true }],
+    'react/forbid-prop-types': ['error', {
+      'forbid': ['any']
+    }],
+    'react/sort-comp': 0,
   },
 };
