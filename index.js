@@ -1,22 +1,14 @@
-module.exports = {
-  extends: [
-    'eslint-config-airbnb',
-  ].map(require.resolve),
-  parser: 'babel-eslint',
-  rules: {
-    'react/require-extension': 0,
-    'react/jsx-filename-extension': [1, {
-      extensions: ['.js', '.jsx']
-    }],
-    'class-methods-use-this': 0,
-    'import/no-extraneous-dependencies': 0,
-    'import/no-unresolved': 0,
-    'react/prefer-stateless-function': 0,
-    'no-lonely-if': 0,
-    'no-param-reassign': 0,
-    'react/forbid-prop-types': ['error', {
-      'forbid': ['any']
-    }],
-    'react/sort-comp': 0,
-  },
-};
+/**
+ * fixFloat js 浮点数修复
+ * @param {*} floatNumber float number
+ * @param {*} digtal count of digtal after dot
+ */
+function fixfloat(floatNumber, digtal) {
+  if (typeof digtal !== 'number') {
+    digtal = 1;
+  }
+  const times = Math.pow(10, digtal);
+  return Math.round(floatNumber * times) / times;
+}
+
+module.exports = fixfloat;
