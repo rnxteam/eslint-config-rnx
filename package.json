@@ -1,20 +1,27 @@
 {
-  "name": "fixfloat",
-  "version": "1.0.0",
-  "description": "fix float number bug in javascript",
+  "name": "eslint-config-rnx",
+  "version": "1.0.5",
+  "description": "RNX's ESLint config, for a better code style.",
   "author": {
     "name": "wangdagen",
     "url": "http://wangdagen.com/"
   },
   "keywords": [
-    "fix",
-    "float",
-    "number",
-    "bug",
-    "javascript"
+    "style guide",
+    "eslint",
+    "config",
+    "rnx"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dragonwong/fixfloat"
+    "url": "https://github.com/rnxteam/eslint-config-rnx"
+  },
+  "dependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb": "^11.1.0",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.2.1"
   }
 }
