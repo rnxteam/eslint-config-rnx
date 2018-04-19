@@ -42,7 +42,9 @@ npm install eslint-config-rnx --save-dev
 }
 ```
 
-### 2. 安装 Atom 插件（可选）
+### 2. 安装插件（可选）
+
+#### 2.1 Atom
 
 使 Atom 支持 eslint 规范检查。
 
@@ -52,6 +54,12 @@ apm install linter
 # 安装 linter-eslint 插件
 apm install linter-eslint
 ```
+
+#### 2.2 VS Code
+
+使 VS Code 支持 eslint 规范检查。
+
+安装插件 ESLint
 
 ### 3. 安装 editorconfig（可选）
 
